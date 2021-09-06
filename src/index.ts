@@ -1,3 +1,3 @@
-import Tree from './Tree';
-
-export default Tree
+import DndTree from './DndTree';
+// import './style'
+export { DndTree };

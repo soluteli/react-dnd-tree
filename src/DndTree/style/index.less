@@ -1,0 +1,42 @@
+@hoverColor: #e6f7ff;
+@dragHoverColor: #91d5ff;
+@selectColor: #1890ff;
+
+.mtree-node-container {
+  display: flex;
+}
+
+.mtree-node-box {
+  position: relative;
+  flex: 1;
+}
+
+.mtree-node-content {
+  cursor: pointer;
+  &:hover {
+    background-color: @hoverColor;
+  }
+  &.mtree-node-content-selected {
+    background-color: @selectColor;
+    color: #fff;
+  }
+}
+
+.mtree-node-holder {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.mtree-node-holder.before {
+  top: 0;
+}
+
+.mtree-node-holder.after {
+  bottom: 0;
+}
+
+.mtree-dragover-color {
+  background: @dragHoverColor;
+}
