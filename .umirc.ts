@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   title: 'kh-react-dnd-tree',
-  // base: '/react-dnd-tree',
+  base: '/react-dnd-tree',
   publicPath: process.env.NODE_ENV === 'production' ? '/react-dnd-tree/' : '/',
   locales: [
     ['zh-CN', '中文'],
